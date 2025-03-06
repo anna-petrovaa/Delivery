@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Калькулятор</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/assets/logo.png" alt="Логотип">
+        </div>
+        <nav>
+          <a href="" class="navigation" >Профиль</a>
+          <a href="" class="navigation">История</a>
+        <button class="button-header">Выйти</button>
+       </header>
+       
+       <section>
+        <div class="main">
+           <div class="left-container">
+               <h1 class="left-container-h1">Мы доставим <br>Ваш заказ</h1>
+               <span class="left-container-span">Отправляйте посылки <br> в приложении Шифт Delivery</span>
+                <div class="left-card">
+                    <img class="img-package" src="/src/assets/package-open.png" alt="Посылка">
+                    <img  class="img-qr" src="/src/assets/QR_koronapay.png" alt="QR code">
+                    <span class="left-card-span">Наведите камеру <br> телефона на QR‑код</span>
+                </div>
+           </div>
+                
+
+           <div class="right-container">
+              <h2 class="right-container-h2">Рассчитать доставку</h2>
+
+              <form class="form" id="form-id" onsubmit="handleSubmit(event)">
+                  <div class="form-item">
+                  <label for="">Город отправки</label>
+                   <select class="city-select"  name="city" id="city-select-first">
+                     <option value="">-- Выберите город отправки --</option>
+                     <option value="petersburg">Санкт-Петербург</option>
+                   </select>
+                    <div class="container-span">
+                       <span class="city-span">Санкт-Петербург</span>
+                       <span class="city-span">Новосибирск</span>
+                       <span class="city-span">Томск</span>
+                    </div>
+                </div>
+                <div class="form-item">
+                   <label for="">Город назначения</label>
+                   <select class="city-select" name="city" id="city-select">
+                     <option value="">-- Выберите город назначения --</option>
+                     <option value="novosibirsk">Новосибирск</option>
+                   </select>
+                    <div class="container-span">
+                      <span class="city-span">Новосибирск</span>
+                      <span class="city-span">Томск</span>
+                      <span class="city-span">Москва</span>
+                   </div>
+                </div>
+                    <div class="form-item">
+                    <label for="">Размер посылки</label>
+                    <select class="city-select" name="city" id="city-select">
+                      <option value="">-- Выберите размер посылки --</option>
+                      <option value="novosibirsk">Конверт</option>
+                    </select>
+                </div>
+
+              </form>
+
+              <button onclick="document.location.href = 'delivery.html'" class="form-button" type="submit" form="form-id">Рассчитать</button>
+
+              
+           </div>
+        </div>
+       </section>
+
+       <script type="module" src="/src/main_page/main.js"></script>
+</body>
+</html>
